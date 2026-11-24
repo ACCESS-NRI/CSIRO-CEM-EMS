@@ -11,7 +11,7 @@ spack:
     - _injection: []
   specs:
     # The root Spack Bundle Recipe (SBR) for the model
-    - coastri_ems
+    - coastri-ems
   packages:
     ems:
       require:
