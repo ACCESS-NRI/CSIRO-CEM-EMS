@@ -8,7 +8,7 @@ spack:
     - _version: 2026.11.001
     - _spack-version: ["1.1"]
     - _provenance: [coastri_ems, ems]
-    # - _injection: []
+    - _injection: []
   specs:
     # The root Spack Bundle Recipe (SBR) for the model
     - coastri_ems
