@@ -10,8 +10,7 @@ spack:
     - _provenance: [coastri_ems, ems]
     - _injection: []
   specs:
-    # The root Spack Bundle Recipe (SBR) for the model
-    - coastri-ems
+    - csiro-cem-ems
   packages:
     ems:
       require:
