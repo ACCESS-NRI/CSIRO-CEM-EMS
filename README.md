@@ -1,3 +1,5 @@
+![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fgithub.com%2FACCESS-NRI%2CSIRO-CEM-EMS%2Fraw%2Fmain%2Fspack.yaml&query=%24.spack.repos.access_spack_packages.tag&label=ACCESS-NRI%2Faccess-spack-packages) ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fgithub.com%2FACCESS-NRI%2FCSIRO-CEM-EMS%2Fraw%2Fmain%2Fspack.yaml&query=%24.spack.definitions%5B*%5D._spack-version%5B0%5D&label=ACCESS-NRI%2Fspack) ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FACCESS-NRI%2Fbuild-cd%2Fraw%2FHEAD%2Fconfig%2Fsettings.json&query=%24.deployment.Gadi.Release.%5B'1.1'%5D.spack-config&label=ACCESS-NRI%2Fspack-config%20(Gadi))
+
 # EMS
 
 ## Features
@@ -43,7 +45,7 @@ to create a spack environment called `ems` and build all the components, the loc
 
 ## Deployment
 
-CSIRO-CEM-EMS is deployed automatically when a new version of the [`spack.yaml`](./spack.yaml) file is committed to `main` or a dedicated `backport/VERSION` branch. All the ACCESS-OM3 components are built using `spack` on `gadi` and installed under the [`vk83`](https://my.nci.org.au/mancini/project/vk83) project in `/g/data/vk83`. It is necessary to be a member of [`vk83`](https://my.nci.org.au/mancini/project/vk83) project to use ACCESS-NRI deployments of ACCESS-OM3.
+CSIRO-CEM-EMS is deployed automatically when a new version of the [`spack.yaml`](./spack.yaml) file is committed to `main` or a dedicated `backport/VERSION` branch. All the components are built using `spack` on `gadi` and installed under the [`vk83`](https://my.nci.org.au/mancini/project/vk83) project in `/g/data/vk83`. It is necessary to be a member of [`vk83`](https://my.nci.org.au/mancini/project/vk83) project to use ACCESS-NRI deployments of CSIRO-CEM-EMS.
 
 The deployment process also creates a GitHub release with the same tag. All releases are available under the [Releases page](https://github.com/ACCESS-NRI/CSIRO-CEM-EMS/releases). Each release has a changelog and meta-data with detailed information about the build and deployment, including:
 
@@ -51,7 +53,7 @@ The deployment process also creates a GitHub release with the same tag. All rele
 - a `spack.lock` file, which is a complete build provenance document, listing all the components that were built and their dependencies, versions, compiler version, build flags and build architecture. It is also installable via spack similarly to the `spack.yaml`. 
 - the environment `spack.yaml` file used for deployment
 
-Additionally the deployment creates environment modulefiles, the [standard method for deploying software on `gadi`](https://opus.nci.org.au/display/Help/Environment+Modules). To view available ACCESS-OM3 versions:
+Additionally the deployment creates environment modulefiles, the [standard method for deploying software on `gadi`](https://opus.nci.org.au/display/Help/Environment+Modules). To view available CSIRO-CEM-EMS versions:
 
 ```bash
 module use /g/data/vk83/modules
