@@ -15,6 +15,7 @@ spack:
     ems:
       require:
         - '@1.5.3'
+        - '+openmp'
     netcdf-c:
       require:
         - '@4.9.3'
