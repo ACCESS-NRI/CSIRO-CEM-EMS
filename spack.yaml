@@ -7,7 +7,7 @@ spack:
     - _name: [csiro-cem-ems]
     - _version: [2026.11.001]
     - _spack-version: ["1.1"]
-    - _provenance: [coastri_ems, ems]
+    - _provenance: [ems]
     - _injection: []
   specs:
     - csiro-cem-ems
